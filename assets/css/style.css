@@ -9875,5 +9875,146 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation__logo {
+  position: absolute;
+  top: 0.9em;
+  left: 2.5em;
+}
+
+.navigation__logo__img {
+  width: 40px;
+  height: 40px;
+}
+
+.collapsible {
+  text-align: right;
+}
+.collapsible label {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+  font-size: 1.8rem;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+.navigation__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item a {
+  display: block;
+  text-align: left;
+  padding: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #726f73;
+  text-decoration: none;
+}
+.navigation__item a:hover {
+  color: #aeacaf;
+}
+
+.navigation__button {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navigation__button__1 {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  color: #221d23;
+  border: none;
+  background-color: transparent;
+}
+.navigation__button__1:hover {
+  color: #aeacaf;
+  background-color: #221d23;
+}
+
+.navigation__button__2 {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #2ab7ca;
+  border-style: none;
+}
+.navigation__button__2:hover {
+  background-color: #77d1dd;
+}
+
+@media only screen and (min-width: 700px) {
+  .navigation__logo {
+    top: 1em;
+    left: 3em;
+  }
+
+  .collapsible label {
+    display: none;
+  }
+
+  .navigation__container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5em;
+    padding: inherit;
+  }
+
+  .navigation__item a {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .navigation__button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
