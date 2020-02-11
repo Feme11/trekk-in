@@ -10131,4 +10131,17 @@ h3 {
   border-style: none;
 }
 
+footer {
+  background-color: #221d23;
+}
+
+.footer__item {
+  color: #bababa;
+}
+
+.footer__p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
