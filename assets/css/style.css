@@ -10017,11 +10017,10 @@ input:checked ~ .navigation__container {
   }
 }
 .header {
-  font-family: "Raleway", sans-serif;
   padding: 0;
 }
 
-.header__background__img {
+.header__background {
   position: relative;
   width: 100%;
   height: 100%;
@@ -10033,11 +10032,12 @@ input:checked ~ .navigation__container {
 }
 
 .header__text__h1 {
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
 
-.header__text__p {
+.text__p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -10046,11 +10046,89 @@ input:checked ~ .navigation__container {
 
 .caracteristicas {
   position: relative;
+  padding: 1.5em;
 }
 
-.precios__row {
+.caracteristicas__h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.caracteristicas__graph {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 2em;
+}
+
+.precios__title {
+  position: relative;
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+.precios__background {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.precios__h2 {
+  margin-top: -3em;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.container__cards {
+  position: relative;
+  padding: 1.5em;
+  background-color: #333745;
+}
+
+.precios__card {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 3.5em;
+  border: 1px solid #aeacaf;
+}
+
+.precios__body__h4 {
+  font-size: 20px;
+}
+
+.precios__body__p {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.precios__list {
+  padding-left: 2em;
+}
+
+.precios__item {
+  padding-left: 0.5em;
+}
+
+.precios__button {
+  font-size: 16px;
+  margin: 0 0 1.5em 0;
+  width: 100%;
+  height: 2.5em;
+  color: #fff;
+  background-color: #2ab7ca;
+  border-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

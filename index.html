@@ -39,60 +39,66 @@
     <header class="header">
       <div class="header__text">
       <h1 class="header__text__h1">Haz Trekking sin Parar</h1>
-      <p class="header__text__p">Con Trekk-in te despreocurás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+      <p class="text__p">Con Trekk-in te despreocurás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
       </div>
-      <div class="header__background">
-      <object class="header__background__img" data= "assets/img/bg-hero.svg" type="image/svg+xml">
+      <div>
+      <object class="header__background" data= "assets/img/bg-hero.svg" type="image/svg+xml">
         <img src="assets/img/bg-hero.png" alt="background-hero">
       </object>
-      </div>
+    </div>
     </header>
     <!-- termina header -->
     <!-- comienza section características -->
     <section class="caracteristicas">
-      <h2>Características</h2>
+      <h2 class="caracteristicas__h2">Características</h2>
+        <object class="caracteristicas__graph" type="image/svg+xml" data="assets/img/bar-graph.svg"></object>
       <h3>Estadísticas de tu progreso</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
+      <p class="text__p">Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
     </section>
     <!-- termina section características -->
     <!-- comienza section precios -->
     <section class="precios">
-      <h2>Precios</h2>
-      <!-- en css sacarle margin y padding -->
-      <div class="precios__row row">
+        <object class="precios__background" type="image/svg+xml" data="assets/img/bg-price.svg">
+          <img src="assets/img/bg-price.png" alt="background-precios">
+        </object>
+      <div class="precios_title">
+        <h2 class="precios__h2">Precios</h2>
+      </div>
+      <div class="container__cards">
       <!-- card free -->
         <div class="precios__card">
           <div class="precios__body">
-            <h4>Trekk-in Free</h4>
-            <p>$0/mes</p>
+            <h4 class="precios__body__h4">Trekk-in Free</h4>
+            <p class="precios__body__p">$ 0 / mes</p>
             <hr>
-            <ul>
-              <li>Ver mapas creados por usuarios</li>
-              <li>Conectar con otros usuarios</li>
+            <ul class="precios__list">
+              <li class="precios__item">Ver mapas creados por usuarios</li>
+              <li class="precios__item">Conectar con otros usuarios</li>
             </ul>
             <hr>
-            <button type="button" name="button">Obtén Free</button>
+            <button class="precios__button" type="button" name="button">Obtén Free</button>
           </div>
         </div>
       <!-- // -->
       <!-- card premium -->
         <div class="precios__card">
           <div class="precios__body">
-            <h4>Trekk-in Free</h4>
-            <p>$3500/mes</p>
+            <h4 class="precios__body__h4">Trekk-in Premium</h4>
+            <p class="precios__body__p">$ 3500 / mes</p>
             <hr>
-            <ul>
-              <li>Ver mapas creados por usuarios</li>
-              <li>Conectar con otros usuarios</li>
-              <li>Definir mejores rutas</li>
-              <li>Mapas Offline</li>
-              <li>Integración con otras aplicaciones</li>
+            <ul class="precios__list">
+              <li class="precios__item">Ver mapas creados por usuarios</li>
+              <li class="precios__item">Conectar con otros usuarios</li>
+              <li class="precios__item">Definir mejores rutas</li>
+              <li class="precios__item">Mapas Offline</li>
+              <li class="precios__item">Integración con otras aplicaciones</li>
             </ul>
             <hr>
-            <button type="button" name="button">Obtén Premium</button>
+            <button class="precios__button" type="button" name="button">Obtén Premium</button>
           </div>
         </div>
       <!-- // -->
+    </div>
     </div>
     </section>
     <!-- termina section precios -->
