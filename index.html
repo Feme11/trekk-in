@@ -18,7 +18,7 @@
       <div class="navigation__logo">
         <img class="navigation__logo__img" src="assets/img/Logo.svg" alt="Logo trekk-in">
       </div>
-      <div class="collapsible col-md-12">
+      <div class="collapsible col-md">
         <input type="checkbox" id="menu">
         <label for="menu"> <i class="fas fa-bars"></i></label>
         <div class="navigation__container">
@@ -37,14 +37,14 @@
     <!-- termina nav -->
     <!-- comienza header -->
     <header class="header">
-      <div class="header__background">
-      <!-- <object class="header__background__img" data= "assets/img/bg-hero.svg" type="image/svg+xml">
-        <img src="assets/img/bg-hero.png" alt="background-hero">
-      </object> -->
-      </div>
       <div class="header__text">
-      <h1>Haz Trekking sin Parar</h1>
-      <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+      <h1 class="header__text__h1">Haz Trekking sin Parar</h1>
+      <p class="header__text__p">Con Trekk-in te despreocurás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+      </div>
+      <div class="header__background">
+      <object class="header__background__img" data= "assets/img/bg-hero.svg" type="image/svg+xml">
+        <img src="assets/img/bg-hero.png" alt="background-hero">
+      </object>
       </div>
     </header>
     <!-- termina header -->
@@ -58,11 +58,11 @@
     <!-- comienza section precios -->
     <section class="precios">
       <h2>Precios</h2>
-      <div class="row">
+      <!-- en css sacarle margin y padding -->
+      <div class="precios__row row">
       <!-- card free -->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
+        <div class="precios__card">
+          <div class="precios__body">
             <h4>Trekk-in Free</h4>
             <p>$0/mes</p>
             <hr>
@@ -74,12 +74,10 @@
             <button type="button" name="button">Obtén Free</button>
           </div>
         </div>
-      </div>
       <!-- // -->
       <!-- card premium -->
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
+        <div class="precios__card">
+          <div class="precios__body">
             <h4>Trekk-in Free</h4>
             <p>$3500/mes</p>
             <hr>
@@ -94,7 +92,6 @@
             <button type="button" name="button">Obtén Premium</button>
           </div>
         </div>
-      </div>
       <!-- // -->
     </div>
     </section>
