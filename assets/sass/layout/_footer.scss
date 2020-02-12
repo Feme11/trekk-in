@@ -1,12 +1,20 @@
 footer {
   background-color: $raising-black;
+  padding: 2em 1.5em 2em 1.5em;
+  font-size: $small;
+}
+
+.footer__a {
+display: flex;
+justify-content: space-between;
 }
 
 .footer__item {
-  color: $gray;
+  color: $spanish-gray;
 }
 
 .footer__p {
   text-align: center;
+  padding-top: 1em;
   margin-bottom: 0;
 }
