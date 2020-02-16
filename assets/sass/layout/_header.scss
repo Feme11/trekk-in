@@ -1,3 +1,4 @@
+// header mobile
 .header {
   padding: 0;
 }
@@ -24,3 +25,27 @@
   font-weight: $regular;
   color: $raising-black;
 }
+// fin header mobile
+
+// header desktop
+@media only screen and (min-width: 700px) {
+  .header__text {
+    position: absolute;
+    width: 30em;
+    margin-left: 1.5em;
+    z-index: 1;
+  }
+
+  .header__text__h1 {
+      font-size: $xxxxx-large;
+      margin-bottom: 0;
+  }
+
+  .text__p {
+    font-size: $medium;
+    padding: 0 6em 1em 0;
+  }
+}
+  .header__background {
+    z-index: -1;
+  }
