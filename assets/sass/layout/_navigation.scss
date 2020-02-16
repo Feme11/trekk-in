@@ -52,12 +52,8 @@ input:checked ~ .navigation__container {
     font-weight: $regular;
     color: $nickel;
     text-decoration: none;
-    &:hover {
-      color: $silver-chalice;
-    }
   }
 }
-//
 
 .navigation__button {
   text-align: center;
@@ -73,10 +69,6 @@ input:checked ~ .navigation__container {
   color: $raising-black;
   border: none;
   background-color: transparent;
-    &:hover {
-      color: $silver-chalice;
-      background-color: $raising-black;
-    }
 }
 
 .navigation__button__2 {
@@ -86,24 +78,24 @@ input:checked ~ .navigation__container {
   color: $white;
   background-color: $ball-blue;
   border-style: none;
-  &:hover {
-    background-color: $middle-blue;
-  }
 }
 
 // fin mobile
 
 // desktop
+
 @media only screen and (min-width: 700px) {
   .navigation__logo {
     top: 1em;
     left: 3em;
   }
+
   .collapsible {
     label {
       display: none;
     }
   }
+
   .navigation__container {
     display: flex;
     justify-content: space-between;
@@ -111,24 +103,47 @@ input:checked ~ .navigation__container {
     padding: .5em 3em .5em 0;
     overflow: visible;
   }
+
   .navigation__list {
     display: flex;
     justify-content: flex-start;
     margin-left: 5em;;
     padding: inherit;
   }
+
   .navigation__item {
     a {
-      padding: .5em 1em;
+      padding: 0em 1em;
       font-size: 1rem;
       font-weight: $regular;
+      &:hover {
+        color: $silver-chalice;
+      }
     }
   }
 
   .navigation__button {
     padding: .5em 1em;
-    font-size: 1rem;
     font-weight: $regular;
+    font-family: $open-sans;
+    font-size: $medium;
   }
 
+  .navigation__button__1 {
+    margin-top:1em;
+    &:hover {
+    color: $silver-chalice;
+    background-color: $raising-black;
+  }
 }
+
+  .navigation__button__2 {
+    margin-top: 1em;
+    &:hover {
+    background-color: $middle-blue;
+  }
+}
+
+
+}
+// fin desktop
