@@ -278,32 +278,45 @@ input:checked ~ .navigation__container {
 
 .precios__card {
   background-color: #fff;
-  padding: 1em;
-  margin-bottom: 3.5em;
+  padding: 0em 1.5em 0 1.5em;
   border: 1px solid #aeacaf;
+  margin-bottom: 3em;
 }
 
 .precios__body__h4 {
   font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .precios__body__p {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
+  margin: 0 0 0.5em 0;
 }
 
 .precios__list {
   padding-left: 2em;
+  line-height: 1.8;
 }
 
 .precios__item {
   padding-left: 0.5em;
 }
 
+.precios__free {
+  padding-bottom: 5.4em;
+}
+
+hr {
+  color: #bababa;
+  border-style: ridge;
+}
+
 .precios__button {
   font-size: 16px;
-  margin: 0 0 1.5em 0;
+  margin: 0.5em 0 1.5em 0;
   width: 100%;
   height: 2.5em;
   color: #fff;
@@ -311,6 +324,32 @@ input:checked ~ .navigation__container {
   border-style: none;
 }
 
+@media only screen and (min-width: 700px) {
+  .precios__h2 {
+    margin-top: -14em;
+    font-size: 45px;
+  }
+
+  .container__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .precios__card {
+    margin: 0 3em 2em 3em;
+  }
+
+  .precios__body__h4 {
+    font-size: 30px;
+  }
+
+  .precios__body__p {
+    font-size: 45px;
+  }
+}
 footer {
   background-color: #221d23;
   padding: 2em 1.5em 2em 1.5em;

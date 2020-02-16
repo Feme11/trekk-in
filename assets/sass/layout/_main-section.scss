@@ -49,13 +49,9 @@
     padding-right: 3em;
   }
 }
-
-
-
-
 // fin section caracteristicas desktop
 
-// section precios
+// section precios mobile
 .precios__title {
   position: relative;
   margin: 0;
@@ -86,39 +82,77 @@
 
 .precios__card {
   background-color: $white;
-  padding: 1em;
-  margin-bottom: 3.5em;
+  padding: 0em 1.5em 0 1.5em;
   border: 1px solid $silver-chalice;
+  margin-bottom: 3em;
 }
 
 .precios__body__h4 {
   font-size: $large;
+  font-weight: $regular;
+  margin-bottom: 0;
 }
 
 .precios__body__p {
   font-family: $raleway;
   font-size: $xxx-large;
   font-weight: $bold;
+  margin: 0 0 .5em 0;
 }
 
 .precios__list {
   padding-left: 2em;
+  line-height: 1.8;
 }
 
 .precios__item {
   padding-left: .5em;
 }
 
+.precios__free {
+  padding-bottom: 5.4em;
+}
+hr {
+  color: $gray;
+  border-style: ridge;
+}
 .precios__button {
   font-size: $medium;
-  margin: 0 0 1.5em 0;
+  margin: .5em 0 1.5em 0;
   width: 100%;
   height: 2.5em;
   color: $white;
   background-color: $ball-blue;
   border-style: none;
 }
-// main.section desktop
+// fin section precios mobile
+
+// section precios desktop
 @media only screen and (min-width: 700px) {
 
+  .precios__h2 {
+    margin-top: -14em;
+    font-size: $xxxx-large;
+  }
+
+  .container__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .precios__card {
+    margin: 0 3em 2em 3em;
+  }
+
+  .precios__body__h4 {
+    font-size: $x-large;
+  }
+
+  .precios__body__p {
+    font-size: $xxxx-large;
+
+  }
 }
