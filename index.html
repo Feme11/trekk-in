@@ -14,7 +14,8 @@
   </head>
 
   <body>
-    <!-- comienza nav -->
+
+    <!-- comienza navigation.scss -->
     <nav class="navigation">
       <div class="navigation__logo">
         <img class="navigation__logo__img" src="assets/img/Logo.svg" alt="Logo trekk-in">
@@ -35,8 +36,9 @@
         </div>
       </div>
     </nav>
-    <!-- termina nav -->
-    <!-- comienza header -->
+    <!-- termina navigation.scss -->
+
+    <!-- comienza header.scss -->
     <header class="header">
       <div class="header__text">
       <h1 class="header__text__h1">Haz Trekking sin Parar</h1>
@@ -48,16 +50,32 @@
       </object>
     </div>
     </header>
-    <!-- termina header -->
-    <!-- comienza section características -->
+    <!-- termina header.scss -->
+
+    <!-- comienza main-section.scss -->
+
+      <!-- comienza section características -->
     <section class="caracteristicas">
       <h2 class="caracteristicas__h2">Características</h2>
-        <object class="caracteristicas__graph" type="image/svg+xml" data="assets/img/bar-graph.svg"></object>
-      <h3>Estadísticas de tu progreso</h3>
-      <p class="text__p">Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
+      <div class="caracteristicas__container">
+        <div class="grid__item">
+          <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
+              <g class="bar-graph" fill-rule="evenodd">
+                  <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
+                  <path class="b-bar" fill="#2AB7CA" d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z"/>
+                  <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5" stroke-linecap="square"/>
+              </g>
+          </svg>
+        </div>
+        <div class="grid__item">
+          <h3 class="grid__item__h3">Estadísticas de tu progreso</h3>
+          <p class="grid__item__text">Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
+        </div>
+      </div>
     </section>
-    <!-- termina section características -->
-    <!-- comienza section precios -->
+      <!-- termina section características -->
+
+      <!-- comienza section precios -->
     <section class="precios">
         <object class="precios__background" type="image/svg+xml" data="assets/img/bg-price.svg">
           <img src="assets/img/bg-price.png" alt="background-precios">
@@ -66,7 +84,7 @@
         <h2 class="precios__h2">Precios</h2>
       </div>
       <div class="container__cards">
-      <!-- card free -->
+          <!-- card free -->
         <div class="precios__card">
           <div class="precios__body">
             <h4 class="precios__body__h4">Trekk-in Free</h4>
@@ -80,8 +98,9 @@
             <button class="precios__button" type="button" name="button">Obtén Free</button>
           </div>
         </div>
-      <!-- // -->
-      <!-- card premium -->
+          <!-- // -->
+
+          <!-- card premium -->
         <div class="precios__card">
           <div class="precios__body">
             <h4 class="precios__body__h4">Trekk-in Premium</h4>
@@ -98,12 +117,15 @@
             <button class="precios__button" type="button" name="button">Obtén Premium</button>
           </div>
         </div>
-      <!-- // -->
+          <!-- // -->
     </div>
     </div>
     </section>
-    <!-- termina section precios -->
-    <!-- comienza footer -->
+      <!-- termina section precios -->
+
+    <!-- termina main-section.scss -->
+
+    <!-- comienza footer.scss -->
     <footer>
       <div class="footer__a">
         <a class="footer__item" href="#">Legal</a>
@@ -112,6 +134,6 @@
       </div>
       <p class="footer__p footer__item">© 2018 Trekk-in SPA</p>
     </footer>
-    <!-- termina footer -->
+    <!-- termina footer.scss -->
   </body>
 </html>

@@ -1,4 +1,4 @@
-// section Características
+// section Características mobile
 .caracteristicas {
   position: relative;
   padding: 1.5em;
@@ -11,17 +11,49 @@
   text-align: center;
 }
 
-.caracteristicas__graph {
-  width: 100%;
-  height: 100%;
-}
-
-h3 {
+.grid__item__h3 {
   font-family: $raleway;
   font-size: $large;
   font-weight: $bold;
   padding-top: 2em;
 }
+.grid__item__text {
+  line-height: 1.8;
+}
+// fin section caracteristicas mobile
+
+// section caracteristicas desktop
+@media only screen and (min-width: 700px) {
+  .caracteristicas {
+    padding-bottom: 3em;
+  }
+
+  .caracteristicas__h2 {
+    margin-top: 0;
+    font-size: $xxxx-large;
+  }
+
+  .caracteristicas__container {
+    display: grid;
+    grid-template-columns: 30em 30em;
+    justify-content: center;
+  }
+
+  .grid__item__h3 {
+    padding: 0;
+    margin: .5em 0 0 0;
+    font-size: $xx-large;
+  }
+
+  .grid__item__text {
+    padding-right: 3em;
+  }
+}
+
+
+
+
+// fin section caracteristicas desktop
 
 // section precios
 .precios__title {
@@ -88,5 +120,5 @@ h3 {
 }
 // main.section desktop
 @media only screen and (min-width: 700px) {
-  
+
 }
