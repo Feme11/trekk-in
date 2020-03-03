@@ -1,1 +1,6 @@
-
+@keyframes mover {
+    0% { margin-left: 0;}
+    50% { color: red; }
+    75% { opacity: 0.5; }
+    100% { margin-left: 10em; opacity: 0;}
+    }
