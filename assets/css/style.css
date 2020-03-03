@@ -350,6 +350,26 @@ hr {
     font-size: 45px;
   }
 }
+.bar-graph {
+  -webkit-animation: mover 1s ease-in 3 alternate forwards;
+  animation: mover 3s ease-in 10 alternate forwards;
+}
+
+@keyframes mover {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    margin-left: 10em;
+    opacity: 0;
+  }
+}
 footer {
   background-color: #221d23;
   padding: 2em 1.5em 2em 1.5em;
